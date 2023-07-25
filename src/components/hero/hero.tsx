@@ -45,6 +45,7 @@ export default component$(() => {
         width={1200}
         height={900}
         priority={true}
+        alt="hero"
         class="absolute inset-0 object-cover w-full h-full"
       />
 

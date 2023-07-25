@@ -82,7 +82,7 @@ export default component$(() => {
           .
         </p>
       </div>
-      <ImgProfile class=" w-48 mt-12 " />
+      <ImgProfile alt="profile" class=" w-48 mt-12 " />
     </section>
   );
 });
