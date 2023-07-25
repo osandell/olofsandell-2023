@@ -10,12 +10,12 @@ export default component$(() => {
         </h2>
         <p class="mb-4  ">
           Mitt teknikintresse började tidigt i livet när jag fick min första
-          Amiga A1200 som 10-åring. Sedan dess har min kärlek för teknik bara
-          vuxit, med ett särskilt fokus på kodning och webbutveckling. Under
-          årens lopp har det blivit allt från spel och drivrutiner i C++ till
-          mobilappar i Java, och alla möjliga typer av script för automatisering
-          i bash, python mm. På senare år har jag fokuserat på webbutveckling,
-          framförallt med React + TypeScript och Azure + AWS.
+          dator som 9-åring: en SpectraVideo 728 med kassettspelare. Sedan dess
+          har min kärlek för teknik bara vuxit. Under årens lopp har det blivit
+          allt från spel och drivrutiner i C++ till mobilappar i Java, och alla
+          möjliga typer av script för automatisering i bash, python mm. På
+          senare år har jag fokuserat på webbutveckling, framförallt med React +
+          TypeScript och Azure + AWS.
         </p>
         <p class="mb-4  ">
           Vad jag har märkt med tiden är att det inte bara handlar om att koda.

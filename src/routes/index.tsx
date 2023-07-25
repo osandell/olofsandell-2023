@@ -17,7 +17,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "A portfolio to showcase some of my projects.",
+      content: "A landing page to redirect to my LinkedIn and GitHub.",
     },
   ],
 };
