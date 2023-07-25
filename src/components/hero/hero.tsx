@@ -1,5 +1,5 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
-import ImgHero from "~/media/hero-bg.jpg?jsx";
+import { Image } from "@unpic/qwik";
 
 const PartialUnderline = () => (
   <span
@@ -39,12 +39,16 @@ export default component$(() => {
 
   return (
     <section class="flex w-full h-screen items-center justify-center flex-col">
-      <ImgHero class="absolute inset-0 object-cover w-full h-full" />
-      <div
-        class={`relative max-w-lg m-4 flex flex-col items-center transition-all  duration-1000 ${
-          hasLoaded.value === true ? "opacity-80" : "opacity-0"
-        }  ${hasLoaded.value === true ? "top-0" : "-top-3"}  `}
-      >
+      <Image
+        src="/hero-bg.jpg"
+        layout="fullWidth"
+        width={1200}
+        height={900}
+        priority={true}
+        class="absolute inset-0 object-cover w-full h-full"
+      />
+
+      <div class={`relative max-w-lg m-4 flex flex-col items-center `}>
         <h2 class="font-bold text-center text-3xl text-white z-10 mb-6 leading-10 ">
           {`Från `}
           <span style={{ position: "relative", display: "inline-block" }}>
