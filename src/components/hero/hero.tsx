@@ -51,29 +51,29 @@ export default component$(() => {
 
       <div class={`relative max-w-lg m-4 flex flex-col items-center `}>
         <h2 class="font-bold text-center text-3xl text-white z-10 mb-6 leading-10 ">
-          {`Från `}
+          {$localize`From `}
           <span style={{ position: "relative", display: "inline-block" }}>
-            frontend
+            {$localize`frontend`}
             <PartialUnderline />
           </span>
-          {` till `}
+          {$localize` to `}
           <span style={{ position: "relative", display: "inline-block" }}>
-            backend
+            {$localize`backend`}
             <PartialUnderline />
           </span>
           {`, `}
           <span style={{ position: "relative", display: "inline-block" }}>
-            DevOps
+            {$localize`DevOps`}
             <PartialUnderline />
           </span>
-          {`, och `}
+          {$localize`, and `}
           <span style={{ position: "relative", display: "inline-block" }}>
-            mobilappar
+            {$localize`mobile apps`}
             <PartialUnderline />
           </span>
         </h2>
         <h3 class="text-center text-md text-white z-10 mb-14">
-          - jag levererar effektiva lösningar och optimerar prestanda
+          {$localize`- I deliver effective solutions and optimize performance`}
         </h3>
       </div>
       <div class="max-w-lg m-4 flex flex-col items-center">
@@ -83,7 +83,7 @@ export default component$(() => {
             hasLoaded.value === true ? "opacity-80" : "opacity-0"
           }  ${hasLoaded.value === true ? "top-0" : "top-3"}`}
         >
-          Vidare
+          {$localize`Read more`}
         </button>
       </div>
     </section>

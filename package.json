@@ -1,21 +1,22 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "Demo App with Routing built-in (recommended)",
+  "name": "olof-sandell",
+  "description": "A landing page to redirect to my LinkedIn and GitHub.",
   "engines": {
     "node": ">=15.0.0"
   },
   "private": true,
   "scripts": {
     "build": "qwik build",
-    "build.client": "vite build",
+    "build.client": "vite build && npm run i18n-translate",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.server": "vite build -c adapters/express/vite.config.ts",
+    "build.server": "vite build --ssr src/entry.express.tsx",
     "build.types": "tsc --incremental --noEmit",
-    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
+    "i18n-extract": "node_modules/.bin/localize-extract -s \"dist/build/*.js\" -f json -o src/locale/message.en.json",
+    "i18n-translate": "node_modules/.bin/localize-translate -s \"*.js\" -t src/locale/message.*.json -o dist/build/{{LOCALE}} -r ./dist/build",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "serve": "node server/entry.express",
@@ -23,28 +24,32 @@
     "qwik": "qwik"
   },
   "devDependencies": {
+    "@angular/compiler": "^16.1.5",
+    "@angular/compiler-cli": "^16.1.5",
     "@builder.io/qwik": "^1.2.6",
     "@builder.io/qwik-city": "^1.2.6",
     "@types/compression": "^1.7.2",
-    "@types/eslint": "8.40.2",
-    "@types/express": "4.17.17",
-    "@types/node": "^20.4.0",
-    "@typescript-eslint/eslint-plugin": "5.61.0",
-    "@typescript-eslint/parser": "5.61.0",
+    "@types/eslint": "^8.44.0",
+    "@types/express": "^4.17.17",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "autoprefixer": "^10.4.14",
-    "compression": "^1.7.4",
-    "eslint": "8.44.0",
+    "eslint": "^8.45.0",
     "eslint-plugin-qwik": "^1.2.6",
-    "express": "4.18.2",
-    "postcss": "^8.4.23",
-    "prettier": "2.8.8",
-    "tailwindcss": "^3.3.1",
-    "typescript": "5.1.6",
-    "undici": "5.22.1",
-    "vite": "4.4.0",
-    "vite-tsconfig-paths": "4.2.0"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1",
+    "prettier": "^3.0.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.4",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "dependencies": {
-    "@unpic/qwik": "^0.0.24"
+    "@angular/localize": "^16.1.5",
+    "@unpic/qwik": "^0.0.25",
+    "compression": "^1.7.4",
+    "postcss": "^8.4.29",
+    "undici": "^5.23.0"
   }
 }

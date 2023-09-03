@@ -1,0 +1,28 @@
+{
+  "locale": "en",
+  "translations": {
+    "1400522783381388775": "A genuine passion for technology",
+    "1733117307666834272": "My interest in technology began early in life when I got my first computer at the age of 9 — a SpectraVideo 728 with a cassette player. Since then, my love for technology has only grown. Over the years, I've done everything from games and drivers in C++, mobile apps in Java, to all kinds of scripts for automation in bash, python, etc. In recent years I've focused on web development, primarily with React + TypeScript and Azure + AWS.",
+    "1662015794530627300": "What I've noticed over time is that the actual typing of code is just a part of the process. It's also about finding solutions to problems, optimizing workflows, and always striving to improve performance.",
+    "3997700162660149005": "Here are three areas where I particularly enjoy contributing:",
+    "4719652894707120865": "Solving tough problems and bugs",
+    "3333960165327822909": "With my background in using different programming languages and systems, I have a deep understanding of the core of technology. This makes it possible for me to quickly analyze, understand, and solve complex problems that may arise during the development process. My passion for coding and my persistence help me consistently solve bugs and technical challenges.",
+    "5520976361721474910": "Creating smarter workflows that save time and money",
+    "4127154014195936252": "Efficiency and innovation are two of my strengths when it comes to web development. By constantly exploring new technologies and tools, I find new ways to automate and simplify workflows. This can range from optimizing existing code to implementing new processes that improve collaboration within the team. Through this, I contribute to reducing development time and thus lowering the financial expences.",
+    "7585710590153743738": "Optimizing application size and speed",
+    "5038592722779871521": "With an increasingly mobile world, speed and size optimization are key to a successful web application. By writing clean, compact, and efficient code, and by using modern technologies and tools, I ensure that the applications I build are both fast and lightweight. This provides the end user with a better experience and directly affects the success of the application.",
+    "464219085883997392": "As an example of getting a lot of performance for the money, I built this site using Qwik, a new framework that is significantly faster than for example React, thanks to new elegant solutions to the server / client side rendering dilemma. I then deployed it to a self-managed virtual private server, giving me full control at minimal costs.",
+    "7922989125096435449": "Contact",
+    "7407621821278473429": "You can easily reach me via email at ",
+    "1366533596865579385": " or by sending me a message on ",
+    "4729898571994047831": "From ",
+    "1410498258126633319": "frontend",
+    "1042662561872819815": " to ",
+    "5270489364382491583": "backend",
+    "7607104788059971606": "DevOps",
+    "1877416676111608588": ", and ",
+    "3662208535753018841": "mobile apps",
+    "4468187357062676999": "- I deliver effective solutions and optimize performance",
+    "2827984212740060090": "Read more"
+  }
+}
