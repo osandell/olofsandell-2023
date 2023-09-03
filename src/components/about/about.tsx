@@ -4,7 +4,7 @@ import ImgProfile from "~/media/profile.jpg?jsx";
 export default component$(() => {
   return (
     <section id="about" class="my-14 md:my-28 mx-4 flex flex-col items-center">
-      <div class="text-center md:max-w-prose">
+      <div class="text-center md:max-w-prose lg:max-w-screen-md">
         <h2 class="font-bold text-center text-2xl mb-8">
           {$localize`A genuine passion for technology`}
         </h2>
@@ -14,17 +14,17 @@ export default component$(() => {
         <p class="mb-4">
           {$localize`What I've noticed over time is that the actual typing of code is just a part of the process. It's also about finding solutions to problems, optimizing workflows, and always striving to improve performance.`}
         </p>
-        <p class="mb-12">
+        <p class="mb-12 lg:mb-16">
           {$localize`Here are three areas where I particularly enjoy contributing:`}
         </p>
         <h3 class="font-bold mb-4">{$localize`Solving tough problems and bugs`}</h3>
-        <p class="mb-12">
+        <p class="mb-12 lg:mb-16">
           {$localize`With my background in using different programming languages and systems, I have a deep understanding of the core of technology. This makes it possible for me to quickly analyze, understand, and solve complex problems that may arise during the development process. My passion for coding and my persistence help me consistently solve bugs and technical challenges.`}
         </p>
         <h3 class="font-bold mb-4">
           {$localize`Creating smarter workflows that save time and money`}
         </h3>
-        <p class="mb-12">
+        <p class="mb-12 lg:mb-16">
           {$localize`Efficiency and innovation are two of my strengths when it comes to web development. By constantly exploring new technologies and tools, I find new ways to automate and simplify workflows. This can range from optimizing existing code to implementing new processes that improve collaboration within the team. Through this, I contribute to reducing development time and thus lowering the financial expences.`}
         </p>
         <h3 class="font-bold mb-4">
@@ -39,7 +39,10 @@ export default component$(() => {
         <h2 class="font-bold text-center text-2xl mb-8">{$localize`Contact`}</h2>
         <p class="mb-4">
           {$localize`You can easily reach me via email at `}
-          <a href="mailto:olof.sandell@protonmail.com" class="text-blue-800">
+          <a
+            href="mailto:olof.sandell@protonmail.com"
+            class="text-blue-700 underline"
+          >
             olof.sandell@protonmail.com
           </a>
           {$localize` or by sending me a message on `}
@@ -47,7 +50,7 @@ export default component$(() => {
             href="https://www.linkedin.com/in/olof-sandell/"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-blue-800"
+            class="text-blue-700 underline"
           >
             LinkedIn
           </a>

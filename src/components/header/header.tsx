@@ -72,7 +72,9 @@ export default component$(() => {
                 <IconContact />
               </a>
             </li>
-            <LocaleLink location={location} />
+            <li>
+              <LocaleLink location={location} />
+            </li>
           </ul>
         </nav>
       </div>

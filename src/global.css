@@ -6,3 +6,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.partial-underline {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background: #60a5fa;
+}
+
+@media (min-width: 768px) {
+  .md\:partial-underline {
+    height: 6px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:partial-underline {
+    height: 7px;
+    width: 60px;
+  }
+}

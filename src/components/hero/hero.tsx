@@ -2,17 +2,7 @@ import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 
 const PartialUnderline = () => (
-  <span
-    style={{
-      content: "",
-      position: "absolute",
-      bottom: "1px",
-      left: "0",
-      width: "40px",
-      height: "4px",
-      background: "#60A5FA",
-    }}
-  />
+  <span class="partial-underline md:partial-underline lg:partial-underline" />
 );
 
 function scrollToAbout() {
@@ -49,30 +39,31 @@ export default component$(() => {
         class="absolute inset-0 object-cover w-full h-full"
       />
 
-      <div class={`relative max-w-lg m-4 flex flex-col items-center `}>
-        <h2 class="font-bold text-center text-3xl text-white z-10 mb-6 leading-10 ">
+      <div
+        class={`relative max-w-lg lg:max-w-3xl m-4 flex flex-col items-center `}
+      >
+        <h2 class="font-bold text-center text-3xl md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight text-white z-10 mb-6 ">
           {$localize`From `}
           <span style={{ position: "relative", display: "inline-block" }}>
             {$localize`frontend`}
             <PartialUnderline />
           </span>
           {$localize` to `}
-          <span style={{ position: "relative", display: "inline-block" }}>
-            {$localize`backend`}
+          <span class="mr-2 md:mr-3 relative inline-block">
+            {$localize`backend,`}
             <PartialUnderline />
           </span>
-          {`, `}
-          <span style={{ position: "relative", display: "inline-block" }}>
-            {$localize`DevOps`}
+          <span class="mr-2 md:mr-3 relative inline-block">
+            {$localize`DevOps,`}
             <PartialUnderline />
           </span>
-          {$localize`, and `}
-          <span style={{ position: "relative", display: "inline-block" }}>
+          <span class="mr-2 md:mr-3 relative inline-block">{$localize`and`}</span>
+          <span class="mr-2 md:mr-3 relative inline-block">
             {$localize`mobile apps`}
             <PartialUnderline />
           </span>
         </h2>
-        <h3 class="text-center text-md text-white z-10 mb-14">
+        <h3 class="text-center text-md md:text-lg lg:text-xl text-white z-10 mb-14">
           {$localize`- I deliver effective solutions and optimize performance`}
         </h3>
       </div>
