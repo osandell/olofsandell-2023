@@ -1,4 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
+import Header from "~/components/header/header";
+import Footer from "~/components/footer/footer";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { extractLang } from "~/i18n";
 
@@ -48,9 +50,11 @@ export const onGet: RequestHandler = async ({
 export default component$(() => {
   return (
     <div class="font-sans">
+      <Header />
       <main>
         <Slot />
       </main>
+      <Footer />
     </div>
   );
 });
