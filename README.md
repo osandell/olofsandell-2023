@@ -44,7 +44,7 @@ These metrics collectively contribute to the perfect PageSpeed Insights score, s
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/olofsandell.com.git
+git clone https://github.com/osandell/olofsandell.com.git
 
 # Navigate into the directory
 cd olofsandell.com
